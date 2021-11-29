@@ -1,0 +1,88 @@
+#revisao_filtros {
+    background: #cccccc8f;
+    padding: 0.5rem 3rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+#revisao_filtros > .row > * {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.revisao_ft_right {
+    float: right;
+}
+
+#revisao_total, #revisao_ignorados , #revisao_confirmados {
+    padding: 0 0.2rem;
+    background: rgba(255, 255, 255, 0.904);
+    color: #000;
+    font-weight: bold;
+    border-radius: 0.2rem;
+}
+
+.revisao_title{
+    display: inline;
+}
+
+.revisao_painel_btn {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0.5rem;
+}
+
+.revisao_horizontal_slide {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5rem 0rem;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.revisao_horizontal_slide > img {
+    max-width: 700px;
+    max-height: 700px;
+}
+
+.btn-group > label {
+    margin: 0 0.5rem;
+}
+
+.revisao_carrosel_img {
+    width: 50%;
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 0.2rem solid #000;
+    border-radius: 1rem;
+}
+
+.revisao_carrosel_img > h5 {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.revisao_prod_info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid #000;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.revisao_prod_info > span {
+    cursor: default;
+}
+
+#bloco_novo_grupo_revisao {
+    display: none;
+}
+
+.alternar_input_revisao {
+    cursor: pointer;
+}

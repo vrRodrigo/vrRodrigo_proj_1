@@ -1,0 +1,223 @@
+/* Loading */
+
+body{
+    background: #e3e3e3;
+    color: #777;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-track {
+    background: #b1b1b1;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+}
+
+.horizontal_slide::-webkit-scrollbar {
+    height: 0.5rem;      
+}
+
+.horizontal_slide::-webkit-scrollbar-track {
+    background: #b1b1b1;        /* color of the tracking area */
+}
+
+.horizontal_slide::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+}
+
+/* spinner Loader Principal */
+.loader{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    background: #0000004a;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+    cursor: not-allowed;
+}
+
+#my_spinner {
+    width: 5rem; 
+    height: 5rem;
+}
+
+/* spinner Loader p/ os Cards */
+.small_loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Bloco de informações para o usuário */
+
+.avaliacao_help {
+    position: relative;
+    background: #cccccc8f;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+#hide_show_info {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    color: #007eff;
+    cursor: pointer;
+}
+
+.desc_help_img {
+    display: none;
+    background: #fff;
+    border-radius: 1rem;
+}
+
+#btn_reset_example, #btn_success_example, #btn_danger_example {
+    padding: 0 0.2rem;
+}
+
+/* Div Dinamica */
+
+.prod_info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid #000;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.prod_info > span {
+    cursor: default;
+}
+
+.carrosel_img {
+    width: 50%;
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 0.2rem solid #000;
+    box-shadow: -3px 2px 15px 14px rgb(0 0 0 / 20%);
+    border-radius: 1rem;
+}
+
+.carrosel_img > h5 {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.horizontal_slide {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5rem 0rem;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+
+h1.title{
+    color: #fff;
+}
+
+h1.title > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+input[type=radio].image-radio {
+    display: none;
+}
+
+input[type=radio].image-radio+label {
+    /* border: 1px solid #000; */
+    display: inline-block;
+    /* height: 150px; */
+    /* width: 150px; */
+    margin: 0 8px;
+}
+
+input[type=radio].image-radio:checked+label>img {
+    border: 5px solid green;
+}
+
+
+.container_btn_group {
+    margin: 1rem auto;
+    padding-top: 1rem;
+    width: 90%;
+    border-top: 0.1rem solid #000;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container_btn_group > button {
+    width: 30%;
+}
+
+.chk_image {
+    margin: 0 auto;
+    max-width: 150px;
+    max-height: 150px;
+    cursor: pointer;
+}
+
+.btn_top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.error {
+    border-color: rgba(255, 0, 0, 0.514);
+}
+
+.show_img {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: #0000004a;
+    align-items: center;
+    display: none;
+    justify-content: center;
+    z-index: 1;
+}
+
+.close_img {
+    position: absolute;
+    font-size: 20px;
+    color: #F00;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#container_load_img {
+    display: flex;
+    flex-direction: row-reverse;
+    width: auto;
+    height: auto;
+}
+
+#load_img {
+    width: auto;
+    height: auto;
+    border: 0.3rem solid #efef;
+}
+
